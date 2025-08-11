@@ -5,8 +5,6 @@ from machine import ADC,Pin
 
 ssid = 'your_ssid'
 password = 'your_pass'
-server_ip = 'your_ip'
-server_port = 5005
 
 led = Pin('LED',Pin.OUT)
 
