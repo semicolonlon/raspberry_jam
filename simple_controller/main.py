@@ -17,7 +17,9 @@ while True:
     if wlan.isconnected():
         axis_x = adc_x.read_u16()
         axis_y = adc_y.read_u16()
-        msg = str(axis_x) + ',' + str(axis_y) + ',' +  str(sw.value())
+        msg = '{},{},{}'.format(axis_x, axis_y, sw.value())
         sock.sendto(msg.encode(), addr)
-    time.sleep(0.1)
-
+    else:
+        print("Wi-Fi disconnected")
+        led.value(0)
+    time.sleep(0.01)
