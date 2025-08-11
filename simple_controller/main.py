@@ -3,9 +3,10 @@ import socket
 import time
 from machine import ADC,Pin
 
-server_ip = 'your ip'
+server_ip = 'your_ip'
+server_port = 5005
 
-addr = (server_ip, 5005)
+addr = (server_ip, server_port)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 adc_x = ADC(26)
