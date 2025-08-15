@@ -1,3 +1,6 @@
+# license semicolonlon 2025
+# thank you !
+
 # ピンの接続について
 # 26 -> x
 # 27 -> y
