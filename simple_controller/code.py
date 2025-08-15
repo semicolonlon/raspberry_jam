@@ -15,10 +15,10 @@ import board
 from digitalio import DigitalInOut, Direction, Pull
 from analogio import AnalogIn
 
-SSID = 'HR01a-DC45C3'
-PASSWORD = '864a9ac3c3'
+SSID = 'ssid'
+PASSWORD = 'pass'
 
-SERVER_IP = '192.168.128.102'
+SERVER_IP = 'ip'
 SERVER_PORT = 5005
 
 RETRY_WAIT_SEC = 5
